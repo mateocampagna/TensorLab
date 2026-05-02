@@ -25,7 +25,7 @@ This library serves as a practical companion to learning linear algebra. Each op
 - Element access via coordinates
 - Comprehensive error handling
 
-## 📖 Quick Start
+## Quick Start
 ```rust
 use tensor_zero::Tensor;
 

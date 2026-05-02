@@ -8,11 +8,11 @@
 
 A learning-focused Rust tensor library for exploring linear algebra operations. Built from scratch as a hands-on approach to understanding matrix mathematics and numerical computing.
 
-## 🎯 Project Goal
+## Project Goal
 
 This library serves as a practical companion to learning linear algebra. Each operation is implemented manually to understand the underlying mechanics of tensor computations.
 
-## ✨ Current Features
+## Current Features
 
 ### Core Operations
 - **Element-wise operations**: Addition, subtraction, Hadamard product (element-wise multiplication)
@@ -47,7 +47,7 @@ let y = Tensor::new(&vec![7.0, 8.0, 9.0, 1.0, 2.0, 3.0], &vec![3, 2]).unwrap();
 let result = x.matmul(&y).unwrap(); // Shape: [2, 2]
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 tensorlab/
@@ -74,14 +74,14 @@ tensorlab/
 - **`operations.rs`**: Implements `Add`, `Sub`, and `Mul` traits for ergonomic operator usage
 - **`lib.rs`**: Consolidates and re-exports public API
 
-## 🧪 Testing
+## Testing
 ```bash
 cargo test
 ```
 
 All operations include integration tests covering both valid operations and error cases.
 
-## 🚀 Roadmap
+## Roadmap
 
 **Next Steps:**
 - [ ] Matrix transpose
@@ -95,7 +95,7 @@ All operations include integration tests covering both valid operations and erro
 - [ ] Advanced linear algebra (inverse, determinant, SVD)
 - [ ] Automatic differentiation
 
-## 🔧 Technical Details
+## Technical Details
 
 - **Storage**: Flat `Vec<f32>` with row-major ordering
 - **Operations**: Iterator-based functional style
